@@ -1,0 +1,166 @@
+<!doctype html>
+<!--Done by Janusz Sledziewski
+Student ID: R00144164-->
+
+<html lang="en">
+	<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <title>T-shirt</title>
+	  <link rel="stylesheet" href="css/style.css">
+	</head>
+	<body id="body">
+		<header>
+			<h1>T-shirts Shop</h1>
+		</header>
+		<div id='hideme'>
+		<a id="start" href='#' >New Collection</a>
+		
+		</div>
+		<div id="main">
+			 <section id="presentation">
+					<img id="graph" src="pictures/blank.png" alt="graphic area" height="300" width="200">
+					<h5 id="text" ></h5>
+				 <div id="picture">
+				 </div>
+			 </section>
+			 <form id="form" action="http://atlantis.cit.ie/displayvalues.php" method="post">
+			 <section id="selectionBox">
+				<ul class="tab">
+				  <li><a href="javascript:void(0)" class="tablinks" onclick="tabs(event, 'Basic')" id="defaultOpen">Color&Size</a></li>
+				  <li><a id="custom_tab" href="javascript:void(0)" class="tablinks" onclick="tabs(event, 'custom')">Customize Adds</a></li>
+				  <li><a id="order_tab"  href="javascript:void(0)" class="tablinks" onclick="tabs(event, 'makeOrder')">Make Order</a></li>
+				</ul>
+				<div id="Basic" class="tabcontent">
+					<article>
+						<h4>Select Type</h4>
+						<figure>
+							<div class="form">
+							<select  id="t-type" name="T-shrit Type" >
+								<option selected value="none">None</option>
+								<option value="custom">custom &euro; 10</option>
+								<option value="irish">Irish &euro; 14</option>
+								<option value="poland">Husar &euro;14</option>
+								<option value="wykleci" >Zolnierze wykleci &euro;14</option>
+								<option value="whitePL">Polish &euro;14</option>
+								<option value="1944">Warsaw uprising &euro;14</option>
+								<option value="husar">Polish Husaria &euro;14</option>
+							</select>
+							</div>
+						</figure>
+					</article>
+					<article>
+						<h4 id="disableSize">Select Size</h4>
+						<figure>
+							<div class="form">
+							<select  id="getSize" name="size" >
+								<option class="getSize" selected value="small" >Small </option>
+								<option class="getSize" value="medium">Medium </option>
+								<option class="getSize" value="large" >Large </option>
+								<option class="getSize" value="extraLarge">Extra Large </option>
+							</select>
+							</div>
+						</figure>
+					</article>
+				  <article>
+						<h4 id="disableColor">Select Color</h4>
+						<figure>
+							<div class="form">
+								<select id="selectColor" name="T-Shirt color"  >
+									<option  selected value="blue">blue</option>
+									<option  value="green">green</option>
+									<option  value="red">red</option>
+									<option  value="gray">gray</option>
+									<option  value="white">white</option>
+									<option  value="black">black</option>
+								</select>
+							</div>
+						</figure>
+					</article>
+					<h5 class="pricePreview"></h5>
+				</div>
+				<div id="custom" class="tabcontent">
+					<article>
+						<figure>
+							<div class="form">
+							<h4>Custom text + 3&euro;</h4>
+							<form id="new" >
+								<input type="text" name="customText" id="addText" placeholder="Add text">
+								<p id="addTextButtonWarning">To many lethers</p>
+							</form>
+							<h4>Font</h4>
+							<select  id="fontStyle" name="font" >
+								<option selected value="MORVA">morva</option>
+								<option value="typewriter">Typewriter</option>
+								<option value="celtic">Celtic</option>
+								<option value="caviar">Caviar</option>
+								<option value="midevile">midevile</option>
+								<option value="lemon" >Lemon</option>
+							</select>
+							<h4>Font Color</h4>
+							<select  id="fontColor" name="font color" >
+								<option selected value="black">Black</option>
+								<option value="white">White</option>
+								<option value="red">Red</option>
+								<option value="green">Green</option>
+								<option value="blue" >Blue</option>
+							</select>
+							</div>
+						</figure>								
+					</article>
+					 <article>
+						<h4>Add Graphic + 5&euro;</h4>
+						<figure>
+							<div class="form">
+							<select  id="graphic" name="Graphic" >
+								<option selected value="none">None</option>
+								<option value="irish">irish boxer</option>
+								<option value="husar1">husar 1</option>
+								<option value="husar2" >husar 2</option>
+								<option value="husar3" >husar 3</option>
+								<option value="husar4" >husar 4</option>
+								<option value="upraising1" >Warsaw uprising</option>
+							</select>
+							</div>
+						</figure>
+												
+					</article>
+					<h5 class="pricePreview"></h5>
+				</div>
+
+				<div id="makeOrder" class="tabcontent">
+					<section id="order">
+						<section id="recite">
+							<h4>Order Details</h4>
+							<div id="orderDetailsDIV">
+								<h5 id="orderDetailsText" >Your basket is empty</h5>			
+							</div>	
+						</section>
+						<section id="customer">
+							<h4>Customer Details</h4>
+							<input type="text" name="first name" pattern="[A-Za-z]{2,15}"id="fName" placeholder="First Name" title="Min 2 characters" required>
+							<input type="text" name="surname name" pattern="[A-Za-z]{3,15}"id="surname" placeholder="Surname " title="Min 3 character long" required>
+							<input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="email" placeholder="Your email" title="must be in the following order: characters@characters.domain" required>
+							<input type="text" pattern="[0-9]{9,14}" name="phone" id="phone" placeholder="Contact number" title="Min 9 digits, max 14" required>
+							<input type="number" maxlength="2" name="house no" id="houseNo" placeholder="house No" title="Max 2 digits" required>
+							<input type="text" name="street" pattern="[A-Za-z\s]{3,40}" id="street" placeholder="Street" title="Min 3 character long, no digits" required>
+							<input type="text" name="town" pattern="[A-Za-z]{3,20}" id="town" placeholder="City" title="Min 3 character long, no digits" required>
+						</section>
+					</section>
+					<section id="submitSection">
+						<div id="promoCode">
+							<input type="text" name="discount code" id="discountNo" placeholder="Discount code" title="must be in form cit student email like 'name.surname@mycit.ie'">
+							<h5 id="check">submit</h5>
+						</div >
+						<input id="submit" type="submit" value="Send Order">					
+						<input type="text" id="price" name="Final price">
+					</section>
+				</div>
+			</section> 	 
+		 </div>
+		 </form>
+
+		 <script src="js/jquery-1.11.0.js"></script>
+		 <script src="js/js.js"></script>
+	</body>
+</html>

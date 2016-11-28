@@ -1,0 +1,335 @@
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+
+#main{
+	
+
+}
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@font-face {
+  font-family: MORVA;
+  src: url('../fonts/Constantine.ttf');
+}
+@font-face {
+  font-family: typewriter;
+  src: url('../fonts/Typewriter.ttf');
+}
+@font-face {
+  font-family: celtic;
+  src: url('../fonts/celtic.ttf');
+}
+@font-face {
+  font-family: caviar;
+  src: url('../fonts/CaviarDreams.ttf');
+}
+
+@font-face {
+  font-family: midevile;
+  src: url('../fonts/midevile.ttf');
+}
+@font-face {
+  font-family: lemon;
+  src: url('../fonts/Lemon.otf');
+}
+
+body{
+	margin:0px;
+	text-align: center;
+	
+	background: url(../pictures/1.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center top;
+	background-color:black;
+	min-height:600px;
+
+}
+#hideme{
+	width:100%;
+	height:600px;
+
+}
+#start{
+	position: relative;
+    top: 50%;
+    padding: 10px;
+    color: white;
+    font-size: 70px;
+}
+#main{
+	margin-top: 5%;
+	display:none;
+	min-height:600px;
+}
+form{
+	margin: 10px  auto ;
+}
+header{
+	background-color: rgba(0,0,0,0.4);
+	text-align: center;
+	
+}
+#presentation{
+	/*border:1px solid red;*/
+	width:600px;
+	height:500px;
+	display: inline-block;
+	margin: 10px  auto ;
+}
+.pricePreview{
+	font-family:MORVA;
+	font-size:20px;
+	color:white;
+	display: initial;
+}
+#selectionBox{
+	/*border:1px solid blue;*/ 
+	width:600px;
+	height:500px;
+	display: inline-block;
+	background-color: rgba(0,0,0,0.4);
+	
+}
+#orderDetailsDIV{
+	height:380px;
+}
+#orderDetailsText{
+	padding-top: 20px;
+    padding-left: 20px;
+	font-family:MORVA;
+	font-size:20px;
+	margin: 5px;
+	color:white;
+	text-align:initial;
+}
+/*order tab*/
+#makeOrder{
+	height:100%
+	
+	
+}
+#order{
+	height:350px;
+	display: -webkit-inline-box;
+    display: inline-flex;
+}
+#picture{
+	border:1px solid white;
+	width:400px;
+	height:500px;
+	display:inline-block;
+	background:url(../pictures/none.jpg);
+	background-size:cover;
+}
+#graph{
+	margin-top: 140px;
+    margin-left: 100px;
+	z-index:2;
+	position:absolute;
+
+}
+#text{
+	font-family: MORVA;
+	color: black;
+	font-size: 40px;
+	transform: rotate(0deg);
+	z-index: 3;
+    width: 200px;
+    height: 100px;
+    margin-top: 140px;
+    margin-left: 200px;
+    position: absolute;
+  
+}
+
+
+/*Add text form properties*/
+#new{
+	display:inline-flex;
+}
+#addText{
+	width: 190px;
+	height: 25px;
+    background-color: black;
+    color: white;
+    font-family: MORVA;
+    font-size: 20px;
+    padding: 3px;
+    border-radius: 5px;
+    border-width: 1px;
+}
+#addTextButtonWarning{
+    color: red;
+	font-family: MORVA;
+    margin: 0 7px;
+	opacity:0;
+}
+#customer{
+	width:200px;
+}
+#recite{
+	 width:370px;
+}
+#price{
+	display:none;
+}
+select{
+	border-width: 1px;
+    border-radius: 7px;
+    border-style: inset;
+    border-color: initial;
+}
+h1{	   
+	font-family:MORVA;
+	color:white;
+	font-size:60px;
+	padding:2px;
+	margin:3px;
+	display:block;	
+}
+
+div{
+	margin:0px;
+	padding:0px;
+}
+
+
+h1,ul{
+	    display: inline-block;
+}
+
+form{
+	margin-top:15px;
+}
+
+a:link {
+    text-decoration: none;
+	font-family:MORVA;
+	color: white;
+	font-size:21px;
+}
+ul {	
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
+	border:1px solid gray;
+	width:588px;
+}
+
+li {
+    display: inline-block;
+    display: -moz-inline-box;
+    *display: inline; /* For IE7 */
+    margin-left: 3%;
+
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    /*padding: 14px 16px;*/
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    color:gray;
+}
+#start:hover{
+	color:rgb(146,173,238);
+}
+
+article{
+	text-align: center;
+
+}
+select{
+	width:200px;
+	font-family:MORVA;
+	color:white;
+	background:black;
+	font-size:20px;
+	
+}
+
+
+option{
+	width:200px;
+	font-size:20px;
+	
+}
+input {
+      width: 190px;
+    height: 25px;
+    background-color: black;
+    color: white;
+    font-family: MORVA;
+    font-size: 20px;
+    padding: 3px;
+    border-radius: 5px;
+    border-width: 1px;
+	margin-top: 8px;
+}
+
+
+h4{
+	font-family:MORVA;
+	font-size:20px;
+	margin: 5px;
+	color:white;
+}
+
+
+
+#submitSection{
+	background-color: rgba(0,0,0,0.3);
+	display: inline-table;
+    width: 300px;
+}
+#submit{
+	margin: 0px;
+    height: 30px;
+}
+#submit:hover{
+	color:gray;
+}
+#submit:active{
+	transform: translateY(2px);
+}
+#check{
+	background-color: lightgray;
+    height: 22px;
+    width: 50px;
+    margin-left: 5px;
+    margin-top: 9px;
+    border-radius: 5px;
+    font-family: MORVA;
+    padding-top: 8px;
+    padding-bottom: 2px;
+}
+#check:hover{
+	background-color:white;
+}
+#check:active{
+	transform: translateY(2px);
+}
+#promoCode{
+	display:inline-flex;
+}
